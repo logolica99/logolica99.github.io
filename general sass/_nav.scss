@@ -51,7 +51,7 @@ header {
     .hamburger-menu {
       z-index: 100;
       width: 30px;
-      margin-right: 40px;
+      margin-right: 30px;
       cursor: pointer;
 
       @include breakpoint-down(small) {
