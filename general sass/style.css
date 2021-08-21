@@ -190,6 +190,7 @@ header .moblinks {
   position: fixed;
   top: 0vh;
   height: 100vh;
+  z-index: 10;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
