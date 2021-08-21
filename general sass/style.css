@@ -12,8 +12,46 @@ select:focus {
 }
 
 body {
+  height: 100vh;
   background-color: #04040e;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.full-body {
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px auto;
+      grid-template-columns: 100px auto;
+}
+
+@media (max-width: 640px) {
+  .full-body {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .full-body .side-social {
+    display: none;
+  }
+}
+
+.full-body .right-panel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 16vh 74vh 10vh;
+      grid-template-rows: 16vh 74vh 10vh;
+}
+
+@media (max-width: 640px) {
+  .full-body .right-panel {
+    -ms-grid-rows: 10vh auto auto;
+        grid-template-rows: 10vh auto auto;
+  }
 }
 
 @media (max-width: 39.9375em) {
@@ -79,11 +117,12 @@ header nav ul li a:hover {
   color: #64ffda;
 }
 
-header nav ul button {
+header nav ul .resumeBtn {
   border: none;
   background: none;
   color: #64ffda;
   font-family: monospace;
+  text-decoration: none;
   border: 1px solid #64ffda;
   padding: 10px 16px;
   cursor: pointer;
@@ -92,7 +131,7 @@ header nav ul button {
   transition: all 200ms ease-in-out;
 }
 
-header nav ul button:hover {
+header nav ul .resumeBtn:hover {
   background-color: #64ffdb46;
 }
 
@@ -151,17 +190,22 @@ header .moblinks {
   position: fixed;
   top: 0vh;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 39.9375em) {
+  header .moblinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 header .moblinks ul {
@@ -223,5 +267,103 @@ header .moblinks ul button {
   width: 30px !important;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.side-social {
+  height: 100%;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 39.9375em) {
+  .side-social {
+    display: none;
+  }
+}
+
+.side-social-bar {
+  height: 60vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-social-bar span {
+  display: block;
+  height: 100%;
+  width: 4px;
+  background-color: #64ffda;
+}
+
+.side-social-images {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.side-social-images-img svg {
+  width: 30px;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.side-social-images-img svg:hover > path {
+  fill: #64ffda;
+}
+
+.side-social-images-img svg:hover > g path {
+  fill: #64ffda;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 39.9375em) {
+  footer {
+    display: none;
+  }
+}
+
+footer a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #a3abd8;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+footer a:hover {
+  color: #64ffda;
 }
 /*# sourceMappingURL=style.css.map */

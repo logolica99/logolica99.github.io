@@ -1,5 +1,7 @@
 header {
+
   nav {
+   
     height: 16vh;
     @include breakpoint-down(small) {
       height: 10vh;
@@ -29,19 +31,19 @@ header {
         }
       }
 
-      button {
+      .resumeBtn {
         border: none;
         background: none;
         color: #64ffda;
         font-family: monospace;
-
+        text-decoration: none;
         border: 1px solid #64ffda;
         padding: 10px 16px;
         cursor: pointer;
         border-radius: 4px;
         transition: all 200ms ease-in-out;
       }
-      button:hover {
+      .resumeBtn:hover {
         background-color: #64ffdb46;
       }
     }
@@ -51,7 +53,7 @@ header {
       width: 30px;
       margin-right: 40px;
       cursor: pointer;
-     
+
       @include breakpoint-down(small) {
         display: flex;
         flex-direction: column;
@@ -90,10 +92,14 @@ header {
     position: fixed;
     top: 0vh;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     transition: all 300ms ease-in-out;
+
+    @include breakpoint-down(small) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     ul {
       display: flex;
@@ -127,24 +133,19 @@ header {
 
 .active-menu {
   transform: translateX(30vw);
-
-
 }
 .non-active-menu {
   transform: translateX(200%);
 }
 .burger-active {
-
-    > span:nth-child(2) {
-      visibility: hidden;
-     
-    }
-    > span:first-child {
-      transform: rotate(-45deg) translate(-14px, 14px);
-    }
-    > span:last-child {
-        width: 30px !important;
-        transform: rotate(45deg) ;
-      
-    }
+  > span:nth-child(2) {
+    visibility: hidden;
   }
+  > span:first-child {
+    transform: rotate(-45deg) translate(-14px, 14px);
+  }
+  > span:last-child {
+    width: 30px !important;
+    transform: rotate(45deg);
+  }
+}

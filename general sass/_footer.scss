@@ -1,0 +1,19 @@
+footer{
+ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include breakpoint-down(small){
+        display: none;
+    }
+    a{
+        margin-right: 40px;
+        text-decoration: none;
+        color: #a3abd8;
+        transition: all 200ms ease-in-out;
+    }
+    a:hover{
+        color: #64ffda;
+    }
+}
