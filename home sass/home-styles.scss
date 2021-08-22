@@ -8,37 +8,35 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-@include breakpoint-down(small){
+  @include breakpoint-down(small) {
     margin-left: 16%;
-}
+  }
   h3 {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 400;
     color: #64ffdb;
-    @media (max-width:1000px) {
-        
+    @media (max-width: 1000px) {
     }
   }
   h1 {
     font-size: 92px;
     margin-bottom: 10px;
-    @media (max-width:1000px) {
-        font-size: 62px;
+    @media (max-width: 1000px) {
+      font-size: 62px;
     }
-    @include breakpoint-down(small){
-        font-size: 42px;
+    @include breakpoint-down(small) {
+      font-size: 42px;
     }
   }
   h2 {
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
-    @media (max-width:1000px) {
-        
+    @media (max-width: 1000px) {
     }
-    @include breakpoint-down(small){
-        font-size: 20px;
+    @include breakpoint-down(small) {
+      font-size: 20px;
     }
   }
   p {
@@ -46,13 +44,13 @@
     margin-bottom: 60px;
     line-height: 50px;
     margin-right: 60%;
-    @media (max-width:1000px) {   
-        font-size: 20px;
-        line-height: 30px;
+    @media (max-width: 1000px) {
+      font-size: 20px;
+      line-height: 30px;
     }
-    @include breakpoint-down(small){
-        font-size: 20px;
-        margin-right: 30%;
+    @include breakpoint-down(small) {
+      font-size: 20px;
+      margin-right: 30%;
     }
   }
   .contactBtn {
@@ -66,8 +64,8 @@
       cursor: pointer;
       border-radius: 6px;
       transition: all 200ms ease-in-out;
-      @include breakpoint-down(small){
-          font-size: 16px;
+      @include breakpoint-down(small) {
+        font-size: 16px;
       }
     }
     a:hover {
@@ -75,82 +73,143 @@
     }
   }
 }
-.contact-page{
-   
+.contact-page {
   text-align: center;
   width: 50%;
   margin: 80px auto;
-  @media (max-width:1000px) {
-      width: 70%;
-
+  @media (max-width: 1000px) {
+    width: 70%;
   }
-  @include breakpoint-down(small){
-      margin: 40px auto;
+  @include breakpoint-down(small) {
+    margin: 40px auto;
   }
-  >h1{
-      color:#D4D8ED;
-      font-size: 72px;
-      margin-bottom: 40px;
-      >span{
-          color:#64ffda;
+  > h1 {
+    color: #d4d8ed;
+    font-size: 72px;
+    margin-bottom: 40px;
+    > span {
+      color: #64ffda;
+    }
+    @media (max-width: 1000px) {
+      font-size: 52px;
+    }
+  }
+  > p {
+    color: #a3abd8;
+    font-size: 25px;
+    line-height: 40px;
+    @include breakpoint-down(small) {
+      font-size: 20px;
+    }
+  }
+  .helloBtn {
+    margin-top: 80px;
+    a {
+      font-size: 20px;
+      color: #64ffda;
+      font-family: monospace;
+      text-decoration: none;
+      border: 1px solid #64ffda;
+      padding: 16px 24px;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 200ms ease-in-out;
+      @include breakpoint-down(small) {
+        font-size: 16px;
       }
-      @media (max-width:1000px) {
-          font-size: 52px;
-      }
-  }
-  >p{
-      color:#a3abd8;
-      font-size: 25px;
-      line-height: 40px;
-      @include breakpoint-down(small){
-          font-size: 20px;
-      }
-      
-  }
-  .helloBtn{
-      margin-top: 80px;
-      a {
-          font-size: 20px;
-          color: #64ffda;
-          font-family: monospace;
-          text-decoration: none;
-          border: 1px solid #64ffda;
-          padding: 16px 24px;
-          cursor: pointer;
-          border-radius: 6px;
-          transition: all 200ms ease-in-out;
-          @include breakpoint-down(small){
-              font-size: 16px;
-          }
-        }
-        a:hover {
-          background-color: #64ffdb46;
-        }
+    }
+    a:hover {
+      background-color: #64ffdb46;
+    }
   }
 }
 
-.about-page{
+.about-page {
   margin-left: 10%;
-  border: 1px solid #64ffda;
-&-heading{
-  
-  h2{
-    color:#D4D8ED;
-  }
-  span{
 
+  display: flex;
+  @include breakpoint-down(medium) {
+    flex-direction: column;
+    margin: 0px 5%;
   }
-}
-  p{
 
-  }
-  &-checkmarks{
-    >ul{
-      >li{
-        >span{
+  &-text {
+    flex: 1;
 
+    &-heading {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        color: #d4d8ed;
+        font-size: 42px;
+        padding-right: 10px;
+        @media (max-width: 1300px) {
+          font-size: 32px;
+        }
+        @include breakpoint-down(small) {
+          font-size: 28px;
+        }
+      }
+      span {
+        background-color: #64ffdbb4;
+        height: 0.1px;
+        width: 60%;
+        @media (max-width: 1065px) {
+          width: 40%;
         }
       }
     }
+    p {
+      margin-top: 30px;
+
+      color: #a3abd8;
+      font-size: 20px;
+      line-height: 30px;
+
+      .break {
+        display: block;
+        margin-top: 20px;
+      }
+    }
+    &-checkmarks {
+      margin-top: 20px;
+
+      > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        .left-list {
+        }
+        .right-list {
+        }
+        list-style: none;
+        > li {
+          margin: 10px 0px;
+          color: #a3abd8;
+          > span {
+            margin-right: 5px;
+            color: #64ffda;
+          }
+        }
+      }
+    }
+  }
+  &-image {
+    align-self: center;
+    text-align: center;
+    flex: 1;
+    @include breakpoint-down(medium) {
+      margin: 40px 0px;
+    }
+    > img {
+      width: 400px;
+      border: 1px solid #64ffda;
+      background-color: #64ffdb0e;
+      @media (max-width: 1050px) {
+        width: 300px;
+      }
+    }
+
   }
 }

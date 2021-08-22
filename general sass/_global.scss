@@ -14,7 +14,7 @@ body {
   background-color: #04040e;
   font-family: "Montserrat", sans-serif;
   
-  @include breakpoint-up(medium){
+  @include breakpoint-up(large){
     overflow: hidden;
   }
 }

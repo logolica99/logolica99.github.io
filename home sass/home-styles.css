@@ -119,7 +119,7 @@
 }
 
 .contact-page > h1 {
-  color: #D4D8ED;
+  color: #d4d8ed;
   font-size: 72px;
   margin-bottom: 40px;
 }
@@ -175,10 +175,126 @@
 
 .about-page {
   margin-left: 10%;
-  border: 1px solid #64ffda;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.about-page-heading h2 {
-  color: #D4D8ED;
+@media (max-width: 63.9375em) {
+  .about-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 5%;
+  }
+}
+
+.about-page-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about-page-text-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-page-text-heading h2 {
+  color: #d4d8ed;
+  font-size: 42px;
+  padding-right: 10px;
+}
+
+@media (max-width: 1300px) {
+  .about-page-text-heading h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .about-page-text-heading h2 {
+    font-size: 28px;
+  }
+}
+
+.about-page-text-heading span {
+  background-color: #64ffdbb4;
+  height: 0.1px;
+  width: 60%;
+}
+
+@media (max-width: 1065px) {
+  .about-page-text-heading span {
+    width: 40%;
+  }
+}
+
+.about-page-text p {
+  margin-top: 30px;
+  color: #a3abd8;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about-page-text p .break {
+  display: block;
+  margin-top: 20px;
+}
+
+.about-page-text-checkmarks {
+  margin-top: 20px;
+}
+
+.about-page-text-checkmarks > ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  list-style: none;
+}
+
+.about-page-text-checkmarks > ul > li {
+  margin: 10px 0px;
+  color: #a3abd8;
+}
+
+.about-page-text-checkmarks > ul > li > span {
+  margin-right: 5px;
+  color: #64ffda;
+}
+
+.about-page-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 63.9375em) {
+  .about-page-image {
+    margin: 40px 0px;
+  }
+}
+
+.about-page-image > img {
+  width: 400px;
+  border: 1px solid #64ffda;
+  background-color: #64ffdb0e;
+}
+
+@media (max-width: 1050px) {
+  .about-page-image > img {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=home-styles.css.map */
