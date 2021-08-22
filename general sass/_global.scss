@@ -13,7 +13,10 @@ body {
   height: 100vh;
   background-color: #04040e;
   font-family: "Montserrat", sans-serif;
-  overflow-x:hidden;
+  
+  @include breakpoint-up(medium){
+    overflow: hidden;
+  }
 }
 .full-body{
   height: 100%;
@@ -53,3 +56,4 @@ body {
     display: none ;
   }
 }
+

@@ -12,10 +12,13 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./general sass/style.css">
+    <link rel="stylesheet" href="./home sass/home-styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" defer></script>
-    <script src="./app.js" class="footer"></script>
-    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
     <title>Jubaer Jami</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./home.js" defer></script>
 </head>
 
 
@@ -75,11 +78,12 @@
             <header>
 
                 <nav>
-                    <ul class="hide-for-mobile">
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./projects.html">Projects</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <a href="#" class="resumeBtn nav-link" >Resume</a>
+                    <ul class="hide-for-mobile nav-links">
+                        <li class="nav-link"><a href="/index.html">Home</a></li>
+                        <li class="nav-link"><a href="/about.html">About</a></li>
+                        <li class="nav-link"><a href="/projects.html">Projects</a></li>
+                        <li class="nav-link"><a href="/contact.html">Contact</a></li>
+                        <a href="#" class="resumeBtn nav-link">Resume</a>
                     </ul>
                     <div class="hamburger-menu hide-for-desktop " id="hamburgerBtn">
                         <span></span><span></span><span></span>
@@ -88,6 +92,7 @@
                 </nav>
                 <div class="moblinks non-active-menu hide-for-desktop" id="mobMenu">
                     <ul>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li><a href="./projects.html">Projects</a></li>
                         <li><a href="./contact.html">Contact</a></li>
@@ -96,18 +101,43 @@
                 </div>
 
             </header>
-            <main>
-               
+            <main id="swup" class="transition-fade about-page">
+                <div class="about-page-heading">
+
+                    <h2>About Me</h2>
+                    <span></span>
+                </div>
+                <p>Hello! My name is Jubaer Jami. I enjoy building cool websites on the internet. My passion for
+                    building websites grew with my amusement by looking at them. Turns out I can also learn the black
+                    magic to summon them.
+
+                    Although I am comfortable in front-end web development, I have also build some amazing full-stack
+                    projects.
+
+                    Here are a few technologies I've been working with recently:
+                </p>
+                <div class="about-page-checkmarks">
+                    <ul>
+                        <li><span> > </span> JavaScript(ES6+)</li>
+                        <li><span> > </span>React</li>
+                        <li><span> > </span>SASS</li>
+                        <li><span> > </span>Node.js</li>
+                        <li><span> > </span>Django</li>
+                    </ul>
+                </div>
+
+
             </main>
             <footer class="footer">
                 <a href="mailto:juubaerjaami@gmail.com">juubaerjaami@gmail.com</a>
+
             </footer>
         </div>
 
     </div>
 
-    
-    <script src="./app.js" ></script>
+
+
 </body>
 
 </html>

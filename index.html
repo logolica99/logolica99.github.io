@@ -16,14 +16,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" defer></script>
     <title>Jubaer Jami</title>
     <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
-    <script src="./app.js" defer></script>
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js" ></script>  
+    <link rel="stylesheet" href="./styles.css">
     <script src="./home.js" defer></script>
 </head>
 
 
 
 <body>
-    <div class="full-body">
+    <div class="full-body" >
         <div class="side-social">
             <div class="side-social-bar">
                 <span></span>
@@ -78,9 +79,10 @@
 
                 <nav>
                     <ul class="hide-for-mobile nav-links" >
-                        <li class="nav-link"><a href="./about.html" >About</a></li>
-                        <li class="nav-link"><a href="./projects.html" >Projects</a></li>
-                        <li class="nav-link"><a href="./contact.html" >Contact</a></li>
+                        <li class="nav-link"><a href="/index.html" >Home</a></li>
+                        <li class="nav-link"><a href="/about.html" >About</a></li>
+                        <li class="nav-link"><a href="/projects.html" >Projects</a></li>
+                        <li class="nav-link"><a href="/contact.html" >Contact</a></li>
                         <a href="#" class="resumeBtn nav-link" >Resume</a>
                     </ul>
                     <div class="hamburger-menu hide-for-desktop " id="hamburgerBtn">
@@ -90,6 +92,7 @@
                 </nav>
                 <div class="moblinks non-active-menu hide-for-desktop" id="mobMenu">
                     <ul>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li><a href="./projects.html">Projects</a></li>
                         <li><a href="./contact.html">Contact</a></li>
@@ -98,12 +101,12 @@
                 </div>
 
             </header>
-            <main>
+            <main id="swup" class="transition-swipe home-page">
                 <h3 id="main-text">Hi, my name is</h3>
                 <h1 id="main-text">Jubaer Jami.</h1>
                 <h2 id="main-text">Full Stack Developer</h2>
                 <p id="main-text">
-                    I can make cool project ideas come into reality.
+                    I can make cool ideas come into reality.
                 </p>
                 <div class="contactBtn" id="main-text">
 

@@ -1,4 +1,4 @@
-main {
+.home-page {
   margin-left: 18%;
   margin-bottom: 70px;
   color: #a3abd8;
@@ -15,48 +15,48 @@ main {
 }
 
 @media (max-width: 39.9375em) {
-  main {
+  .home-page {
     margin-left: 16%;
   }
 }
 
-main h3 {
+.home-page h3 {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 400;
   color: #64ffdb;
 }
 
-main h1 {
+.home-page h1 {
   font-size: 92px;
   margin-bottom: 10px;
 }
 
 @media (max-width: 1000px) {
-  main h1 {
+  .home-page h1 {
     font-size: 62px;
   }
 }
 
 @media (max-width: 39.9375em) {
-  main h1 {
+  .home-page h1 {
     font-size: 42px;
   }
 }
 
-main h2 {
+.home-page h2 {
   color: white;
   font-size: 30px;
   margin-bottom: 10px;
 }
 
 @media (max-width: 39.9375em) {
-  main h2 {
+  .home-page h2 {
     font-size: 20px;
   }
 }
 
-main p {
+.home-page p {
   font-size: 30px;
   margin-bottom: 60px;
   line-height: 50px;
@@ -64,20 +64,20 @@ main p {
 }
 
 @media (max-width: 1000px) {
-  main p {
+  .home-page p {
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 @media (max-width: 39.9375em) {
-  main p {
+  .home-page p {
     font-size: 20px;
     margin-right: 30%;
   }
 }
 
-main .contactBtn a {
+.home-page .contactBtn a {
   font-size: 20px;
   color: #64ffda;
   font-family: monospace;
@@ -91,12 +91,94 @@ main .contactBtn a {
 }
 
 @media (max-width: 39.9375em) {
-  main .contactBtn a {
+  .home-page .contactBtn a {
     font-size: 16px;
   }
 }
 
-main .contactBtn a:hover {
+.home-page .contactBtn a:hover {
   background-color: #64ffdb46;
+}
+
+.contact-page {
+  text-align: center;
+  width: 50%;
+  margin: 80px auto;
+}
+
+@media (max-width: 1000px) {
+  .contact-page {
+    width: 70%;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .contact-page {
+    margin: 40px auto;
+  }
+}
+
+.contact-page > h1 {
+  color: #D4D8ED;
+  font-size: 72px;
+  margin-bottom: 40px;
+}
+
+.contact-page > h1 > span {
+  color: #64ffda;
+}
+
+@media (max-width: 1000px) {
+  .contact-page > h1 {
+    font-size: 52px;
+  }
+}
+
+.contact-page > p {
+  color: #a3abd8;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+@media (max-width: 39.9375em) {
+  .contact-page > p {
+    font-size: 20px;
+  }
+}
+
+.contact-page .helloBtn {
+  margin-top: 80px;
+}
+
+.contact-page .helloBtn a {
+  font-size: 20px;
+  color: #64ffda;
+  font-family: monospace;
+  text-decoration: none;
+  border: 1px solid #64ffda;
+  padding: 16px 24px;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+@media (max-width: 39.9375em) {
+  .contact-page .helloBtn a {
+    font-size: 16px;
+  }
+}
+
+.contact-page .helloBtn a:hover {
+  background-color: #64ffdb46;
+}
+
+.about-page {
+  margin-left: 10%;
+  border: 1px solid #64ffda;
+}
+
+.about-page-heading h2 {
+  color: #D4D8ED;
 }
 /*# sourceMappingURL=home-styles.css.map */

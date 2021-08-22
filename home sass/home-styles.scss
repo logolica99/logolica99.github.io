@@ -1,6 +1,6 @@
 @import "mixins";
 
-main {
+.home-page {
   margin-left: 18%;
   margin-bottom: 70px;
 
@@ -72,6 +72,85 @@ main {
     }
     a:hover {
       background-color: #64ffdb46;
+    }
+  }
+}
+.contact-page{
+   
+  text-align: center;
+  width: 50%;
+  margin: 80px auto;
+  @media (max-width:1000px) {
+      width: 70%;
+
+  }
+  @include breakpoint-down(small){
+      margin: 40px auto;
+  }
+  >h1{
+      color:#D4D8ED;
+      font-size: 72px;
+      margin-bottom: 40px;
+      >span{
+          color:#64ffda;
+      }
+      @media (max-width:1000px) {
+          font-size: 52px;
+      }
+  }
+  >p{
+      color:#a3abd8;
+      font-size: 25px;
+      line-height: 40px;
+      @include breakpoint-down(small){
+          font-size: 20px;
+      }
+      
+  }
+  .helloBtn{
+      margin-top: 80px;
+      a {
+          font-size: 20px;
+          color: #64ffda;
+          font-family: monospace;
+          text-decoration: none;
+          border: 1px solid #64ffda;
+          padding: 16px 24px;
+          cursor: pointer;
+          border-radius: 6px;
+          transition: all 200ms ease-in-out;
+          @include breakpoint-down(small){
+              font-size: 16px;
+          }
+        }
+        a:hover {
+          background-color: #64ffdb46;
+        }
+  }
+}
+
+.about-page{
+  margin-left: 10%;
+  border: 1px solid #64ffda;
+&-heading{
+  
+  h2{
+    color:#D4D8ED;
+  }
+  span{
+
+  }
+}
+  p{
+
+  }
+  &-checkmarks{
+    >ul{
+      >li{
+        >span{
+
+        }
+      }
     }
   }
 }

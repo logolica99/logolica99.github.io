@@ -15,7 +15,12 @@ body {
   height: 100vh;
   background-color: #04040e;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+}
+
+@media (min-width: 40em) {
+  body {
+    overflow: hidden;
+  }
 }
 
 .full-body {
