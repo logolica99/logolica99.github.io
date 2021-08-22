@@ -207,8 +207,9 @@
     @include breakpoint-down(medium) {
       margin: 60px 0px;
     }
+    
     &-wrapper{
-      cursor: pointer;
+      
       height: 100%;
       width: 400px;
       border: 1px solid #64ffda;
@@ -216,6 +217,7 @@
       z-index: 1;
       display: flex;
       align-items: flex-end;
+
       @media (max-width: 1050px) {
         width: 300px;
       }
@@ -224,24 +226,25 @@
       }
     }
 
-    &-wrapper::after{
-      content: "";
-      width: 100%;
-      height: 100%;
-      border: 1px solid #64ffda;
-      background-color: #64ffdb0e;
-      position: absolute;
-      top:30px;
-      left:30px;
-      z-index:-10;
-      transition: all 300ms ease-in-out;
-    }
-    &-wrapper:hover{
-      &::after{
-        top:20px;
-        left: 20px;
-      }
-    }
+
+    // &-wrapper::before{
+    //   content: "";
+    //   width: 100%;
+    //   height: 100%;
+    //   border: 1px solid #64ffda;
+    //   background-color: #64ffdb0e;
+    //   position: absolute;
+    //   top:30px;
+    //   left:30px;
+    //   z-index:-10;
+    //   transition: all 300ms ease-in-out;
+    // }
+    // &-wrapper:hover{
+    //   &::after{
+    //     top:20px;
+    //     left: 20px;
+    //   }
+    // }
 
   }
 }
