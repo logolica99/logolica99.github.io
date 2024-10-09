@@ -1,177 +1,1102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="./general sass/style.css">
-    <link rel="stylesheet" href="./home sass/home-styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" defer></script>
     <title>Jubaer Jami</title>
-    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
-    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js" ></script>  
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./home.js" defer></script>
-</head>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-<body>
-    <div class="full-body" >
-        <div class="side-social">
-            <div class="side-social-bar">
-                <span></span>
-            </div>
-            <div class="side-social-images">
-                <div class="side-social-images-img">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-                    <a href="https://github.com/logolica99" target="blank">
-                        <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.306679 17.4367C-0.991654 25.6133 2.64168 35.475 13.845 39.1133C14.045 39.15 14.23 39.1667 14.4033 39.1667C15.7067 39.1667 16.6033 38.1967 16.6033 37C16.4417 36.1283 17.2417 32.5967 15.07 33.0717C10.8717 33.965 10.3683 31.62 9.72834 30.3933C11.5383 32.7167 14.2583 32.6583 16.31 31.7583C17.4483 31.2583 16.8533 29.985 17.3933 29.52C18.22 28.81 17.8 27.4483 16.715 27.33C12.8583 26.905 9.28668 25.6617 9.28668 19.4933C9.28668 15.88 11.795 15.5567 11.1033 14.045C11.0783 13.99 10.5483 12.7883 11.0283 10.9633C13.3933 11.4 14.4817 13.0967 15.6167 12.7917C18.4283 12.025 21.5233 12.025 24.3333 12.7917C25.5067 13.1067 26.345 11.4567 28.8967 10.9533C29.6317 13.71 28.1083 14.3833 29.0683 15.415C30.1217 16.5483 30.6567 17.92 30.6567 19.4933C30.6567 28.7667 22.795 26.0883 22.155 28.1933C22.0083 28.6733 22.1633 29.1917 22.5467 29.5133C23.5633 30.3683 23.43 32.5633 23.3217 34.3283C23.21 36.1583 23.1133 37.7367 24.125 38.6267C24.4817 38.9433 25.1167 39.2817 26.265 39.0483C37.3217 35.4967 40.9817 25.6783 39.7033 17.52C36.21 -4.76 3.82668 -4.73334 0.306679 17.4367ZM14.09 35.7333L14.0967 36.575C13.225 36.2733 12.405 35.925 11.6383 35.5367C12.3467 35.7183 13.16 35.7967 14.09 35.7333ZM14.7067 29.5667C14.6983 29.61 14.69 29.655 14.6817 29.7C13.26 30.12 12.1667 29.7017 11.42 28.4467C11.42 28.445 11.42 28.445 11.4183 28.4433C12.5517 29.05 13.72 29.3767 14.7067 29.5667ZM20 3.33333C39.7217 3.33333 44.17 30.445 25.7817 36.5683C25.7183 36.0733 25.7767 35.14 25.8167 34.4817C25.9133 32.8967 26.0267 31.05 25.4617 29.5067C33.9417 27.7417 34.65 18.43 31.385 14.2817C31.79 12.695 31.6267 8.96666 30.17 8.50999C29.8267 8.40166 27.995 8.00333 24.4417 10.2383C21.54 9.54499 18.4083 9.54333 15.5067 10.2383C13.7333 9.12666 9.73668 7.31833 8.97001 9.23833C8.08001 11.475 8.29168 13.2833 8.55668 14.2883C5.65835 17.9617 6.52668 24.1117 9.44668 26.9983C7.79168 26.2067 5.51168 25.9367 5.02001 27.5217C4.48168 29.25 6.54001 29.04 7.81835 32.195C7.94001 32.5883 8.16501 33.05 8.51001 33.5083C-2.84165 24.2333 2.63501 3.33333 20 3.33333Z"
-                                fill="#A3ABD8" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="side-social-images-img">
-                    <a href="https://www.linkedin.com/in/jubaer-tanjil-jami-ab84a0167/" target="blank">
-                        <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.610382 39.8387H10.9675V12.6033H0.610382V39.8387ZM2.95413 14.947H8.62374V37.4948H2.95413V14.947Z"
-                                fill="#A3ABD8" />
-                            <path
-                                d="M5.78898 0.161316C2.59687 0.161316 0 2.75827 0 5.9503C0 9.14233 2.59687 11.7394 5.78898 11.7394C8.98109 11.7394 11.578 9.14241 11.578 5.9503C11.578 2.75819 8.98101 0.161316 5.78898 0.161316ZM2.34375 5.9503C2.34375 4.05061 3.88922 2.50507 5.78898 2.50507C7.68875 2.50507 9.23429 4.05053 9.23429 5.9503C9.23429 7.85006 7.68875 9.39561 5.78898 9.39561C3.88922 9.39561 2.34375 7.84999 2.34375 5.9503Z"
-                                fill="#A3ABD8" />
-                            <path
-                                d="M39.9749 21.1555C39.6063 15.8543 35.1845 11.7692 29.7024 11.7692C27.2503 11.7692 24.9355 12.6217 23.1117 14.1344V12.6031H13.1874V39.8385H23.5446V24.9429C23.5446 23.2641 24.9103 21.8984 26.5892 21.8984C28.2678 21.8984 29.6336 23.2641 29.6336 24.9436L29.6436 39.8386H40V21.1806L39.9749 21.1555ZM21.2009 37.4949H15.5312V14.947H20.7678V18.2944L22.6432 18.3052L22.9917 17.7642C24.4643 15.4779 26.973 14.1131 29.7024 14.1131C34.0645 14.1131 37.5573 17.4413 37.6539 21.69L37.6563 37.4949H31.9858L31.9774 24.9429C31.9774 21.9718 29.5602 19.5546 26.5892 19.5546C23.6181 19.5546 21.2009 21.9718 21.2009 24.9429V37.4949Z"
-                                fill="#A3ABD8" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="side-social-images-img">
-                    <a href="https://twitter.com/lioneljami" target="blank">
-                        <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0)">
-                                <path
-                                    d="M39.6677 7.3081C39.3998 7.12645 39.0449 7.13629 38.786 7.33156C38.4462 7.58888 37.8937 7.79323 37.2988 7.95066C38.8481 6.21445 38.8814 5.05497 38.8647 4.78856C38.8473 4.51307 38.6816 4.26861 38.4318 4.1513C38.1813 4.03323 37.8876 4.06199 37.6644 4.22395C35.9214 5.49091 34.1852 5.75808 33.1528 5.78532C31.568 4.26861 29.5101 3.43759 27.3198 3.43759C22.6304 3.43759 18.8159 7.30355 18.8159 12.055C18.8159 12.4637 18.8447 12.8717 18.9014 13.2758C10.7744 13.1842 4.17476 5.39706 4.10664 5.31608C3.94771 5.12687 3.70703 5.02545 3.4603 5.0474C3.21357 5.06859 2.99332 5.20861 2.86996 5.42355C0.531308 9.48024 2.09646 13.0435 3.5269 15.0839C3.27411 14.9492 3.06901 14.816 2.9464 14.7259C2.71935 14.5564 2.41585 14.5284 2.16004 14.654C1.90498 14.7797 1.74226 15.037 1.73696 15.3208C1.67414 19.1868 3.53447 21.4013 5.28429 22.6259C5.05119 22.6039 4.81429 22.6902 4.65233 22.8666C4.47069 23.0641 4.40635 23.3434 4.48507 23.5999C5.69375 27.556 8.66133 28.9001 10.5497 29.3565C6.66705 32.3793 0.952871 31.406 0.890053 31.3954C0.544932 31.3341 0.204351 31.5158 0.0635783 31.8359C-0.076438 32.1553 0.0189244 32.5299 0.297443 32.7419C4.39576 35.8699 9.29784 36.5624 12.8384 36.5624C15.5168 36.5624 17.4173 36.1658 17.5989 36.1257C35.5346 31.8753 36.0394 15.4464 35.9978 12.7543C39.365 9.62328 39.891 8.4305 39.972 8.13533C40.059 7.82275 39.9364 7.48974 39.6677 7.3081ZM34.7195 11.8757C34.5507 12.0308 34.4622 12.2541 34.4773 12.4834C34.525 13.21 35.4423 30.3427 17.2651 34.6499C17.1826 34.6673 9.95705 36.1749 3.69341 33.0718C6.34009 32.9984 10.1349 32.3052 12.7786 29.3368C12.9784 29.1135 13.0268 28.7926 12.9027 28.5202C12.7801 28.25 12.5099 28.0767 12.214 28.0767C12.2117 28.0767 12.2087 28.0767 12.2064 28.0767C12.1686 28.1009 8.19436 28.0721 6.37491 24.2917C7.10753 24.3333 8.01121 24.2879 8.73096 23.9564C9.02765 23.8194 9.20248 23.5084 9.16615 23.1837C9.12982 22.8597 8.88914 22.5956 8.56976 22.5282C8.36617 22.4851 3.94165 21.4959 3.32255 16.6695C3.99387 16.9632 4.85289 17.2031 5.70207 17.0737C5.99421 17.0298 6.23338 16.8201 6.31587 16.5363C6.39837 16.2525 6.3083 15.9467 6.08504 15.753C5.89582 15.588 1.74075 11.8953 3.71081 7.13251C5.84966 9.37655 12.1844 15.208 19.8596 14.7676C20.0844 14.7547 20.2925 14.6412 20.4265 14.4595C20.5597 14.2779 20.6051 14.0463 20.5506 13.8276C20.4053 13.2486 20.3311 12.6522 20.3311 12.0558C20.3311 8.13835 23.4675 4.95204 27.3221 4.95204C29.2074 4.95204 30.9761 5.70434 32.3014 7.0712C32.4406 7.215 32.6321 7.2975 32.8319 7.30128C33.6342 7.31264 34.9526 7.21803 36.4421 6.62088C36.0122 7.15597 35.381 7.79702 34.4523 8.52661C34.1897 8.73323 34.0936 9.08668 34.2154 9.39774C34.3373 9.70956 34.6521 9.90559 34.9806 9.87607C35.157 9.86169 36.0561 9.78298 37.0725 9.56274C36.517 10.1591 35.7579 10.9205 34.7195 11.8757Z"
-                                    fill="#A3ABD8" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0">
-                                    <rect width="40" height="40" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                </div>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-            </div>
-        </div>
-        <div class="right-panel">
-            <header>
+    <!-- =======================================================
+  * Template Name: iPortfolio - v3.10.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
 
-                <nav>
-                    <ul class="hide-for-mobile nav-links" >
-                        <li class="nav-link"><a href="/index.html" >Home</a></li>
-                        <li class="nav-link"><a href="/about.html" >About</a></li>
-                        <li class="nav-link"><a href="/projects.html" >Projects</a></li>
-                        <li class="nav-link"><a href="/contact.html" >Contact</a></li>
-                        <a href="https://drive.google.com/file/d/1aWPBLzIdFGZEo71nyq9wnEXe8gqQZosM/view?usp=sharing" class="resumeBtn nav-link" >Resume</a>
-                    </ul>
-                    <div class="hamburger-menu hide-for-desktop " id="hamburgerBtn">
-                        <span></span><span></span><span></span>
-                    </div>
+  <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-                </nav>
-                <div class="moblinks non-active-menu hide-for-desktop" id="mobMenu">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./projects.html">Projects</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <button>Resume</button>
-                    </ul>
-                </div>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <img
+            src="assets/img/jubaerjami.jpeg"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
+          <h1 class="text-light"><a href="index.html">Jubaer Jami</a></h1>
+          <div class="social-links mt-3 text-center">
+            <a href="https://github.com/logolica99" class="twitter"
+              ><i class="bx bxl-github"></i
+            ></a>
 
-            </header>
-            <main id="swup" class="transition-swipe home-page">
-                <h3 id="main-text">Hi, my name is</h3>
-                <h1 id="main-text">Jubaer Jami.</h1>
-                <h2 id="main-text">Full Stack Developer</h2>
-                <p id="main-text">
-                    I can make cool ideas come into reality.
-                </p>
-                <div class="contactBtn" id="main-text">
-
-                    <a href="mailto:juubaerjaami@gmail.com">Contact Me</a>
-                </div>
-
-
-                
-            </main>
-            <footer class="footer">
-                <a href="mailto:juubaerjaami@gmail.com">juubaerjaami@gmail.com</a>
-                <div class="mobile-social">
-
-                    <div class="mobile-social-images">
-                        <div class="mobile-social-images-img">
-        
-                            <a href="https://github.com/logolica99" target="blank">
-                                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.306679 17.4367C-0.991654 25.6133 2.64168 35.475 13.845 39.1133C14.045 39.15 14.23 39.1667 14.4033 39.1667C15.7067 39.1667 16.6033 38.1967 16.6033 37C16.4417 36.1283 17.2417 32.5967 15.07 33.0717C10.8717 33.965 10.3683 31.62 9.72834 30.3933C11.5383 32.7167 14.2583 32.6583 16.31 31.7583C17.4483 31.2583 16.8533 29.985 17.3933 29.52C18.22 28.81 17.8 27.4483 16.715 27.33C12.8583 26.905 9.28668 25.6617 9.28668 19.4933C9.28668 15.88 11.795 15.5567 11.1033 14.045C11.0783 13.99 10.5483 12.7883 11.0283 10.9633C13.3933 11.4 14.4817 13.0967 15.6167 12.7917C18.4283 12.025 21.5233 12.025 24.3333 12.7917C25.5067 13.1067 26.345 11.4567 28.8967 10.9533C29.6317 13.71 28.1083 14.3833 29.0683 15.415C30.1217 16.5483 30.6567 17.92 30.6567 19.4933C30.6567 28.7667 22.795 26.0883 22.155 28.1933C22.0083 28.6733 22.1633 29.1917 22.5467 29.5133C23.5633 30.3683 23.43 32.5633 23.3217 34.3283C23.21 36.1583 23.1133 37.7367 24.125 38.6267C24.4817 38.9433 25.1167 39.2817 26.265 39.0483C37.3217 35.4967 40.9817 25.6783 39.7033 17.52C36.21 -4.76 3.82668 -4.73334 0.306679 17.4367ZM14.09 35.7333L14.0967 36.575C13.225 36.2733 12.405 35.925 11.6383 35.5367C12.3467 35.7183 13.16 35.7967 14.09 35.7333ZM14.7067 29.5667C14.6983 29.61 14.69 29.655 14.6817 29.7C13.26 30.12 12.1667 29.7017 11.42 28.4467C11.42 28.445 11.42 28.445 11.4183 28.4433C12.5517 29.05 13.72 29.3767 14.7067 29.5667ZM20 3.33333C39.7217 3.33333 44.17 30.445 25.7817 36.5683C25.7183 36.0733 25.7767 35.14 25.8167 34.4817C25.9133 32.8967 26.0267 31.05 25.4617 29.5067C33.9417 27.7417 34.65 18.43 31.385 14.2817C31.79 12.695 31.6267 8.96666 30.17 8.50999C29.8267 8.40166 27.995 8.00333 24.4417 10.2383C21.54 9.54499 18.4083 9.54333 15.5067 10.2383C13.7333 9.12666 9.73668 7.31833 8.97001 9.23833C8.08001 11.475 8.29168 13.2833 8.55668 14.2883C5.65835 17.9617 6.52668 24.1117 9.44668 26.9983C7.79168 26.2067 5.51168 25.9367 5.02001 27.5217C4.48168 29.25 6.54001 29.04 7.81835 32.195C7.94001 32.5883 8.16501 33.05 8.51001 33.5083C-2.84165 24.2333 2.63501 3.33333 20 3.33333Z"
-                                        fill="#A3ABD8" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="mobile-social-images-img">
-                            <a href="https://www.linkedin.com/in/jubaer-tanjil-jami-ab84a0167/" target="blank">
-                                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.610382 39.8387H10.9675V12.6033H0.610382V39.8387ZM2.95413 14.947H8.62374V37.4948H2.95413V14.947Z"
-                                        fill="#A3ABD8" />
-                                    <path
-                                        d="M5.78898 0.161316C2.59687 0.161316 0 2.75827 0 5.9503C0 9.14233 2.59687 11.7394 5.78898 11.7394C8.98109 11.7394 11.578 9.14241 11.578 5.9503C11.578 2.75819 8.98101 0.161316 5.78898 0.161316ZM2.34375 5.9503C2.34375 4.05061 3.88922 2.50507 5.78898 2.50507C7.68875 2.50507 9.23429 4.05053 9.23429 5.9503C9.23429 7.85006 7.68875 9.39561 5.78898 9.39561C3.88922 9.39561 2.34375 7.84999 2.34375 5.9503Z"
-                                        fill="#A3ABD8" />
-                                    <path
-                                        d="M39.9749 21.1555C39.6063 15.8543 35.1845 11.7692 29.7024 11.7692C27.2503 11.7692 24.9355 12.6217 23.1117 14.1344V12.6031H13.1874V39.8385H23.5446V24.9429C23.5446 23.2641 24.9103 21.8984 26.5892 21.8984C28.2678 21.8984 29.6336 23.2641 29.6336 24.9436L29.6436 39.8386H40V21.1806L39.9749 21.1555ZM21.2009 37.4949H15.5312V14.947H20.7678V18.2944L22.6432 18.3052L22.9917 17.7642C24.4643 15.4779 26.973 14.1131 29.7024 14.1131C34.0645 14.1131 37.5573 17.4413 37.6539 21.69L37.6563 37.4949H31.9858L31.9774 24.9429C31.9774 21.9718 29.5602 19.5546 26.5892 19.5546C23.6181 19.5546 21.2009 21.9718 21.2009 24.9429V37.4949Z"
-                                        fill="#A3ABD8" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="mobile-social-images-img">
-                            <a href="https://twitter.com/lioneljami" target="blank">
-                                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0)">
-                                        <path
-                                            d="M39.6677 7.3081C39.3998 7.12645 39.0449 7.13629 38.786 7.33156C38.4462 7.58888 37.8937 7.79323 37.2988 7.95066C38.8481 6.21445 38.8814 5.05497 38.8647 4.78856C38.8473 4.51307 38.6816 4.26861 38.4318 4.1513C38.1813 4.03323 37.8876 4.06199 37.6644 4.22395C35.9214 5.49091 34.1852 5.75808 33.1528 5.78532C31.568 4.26861 29.5101 3.43759 27.3198 3.43759C22.6304 3.43759 18.8159 7.30355 18.8159 12.055C18.8159 12.4637 18.8447 12.8717 18.9014 13.2758C10.7744 13.1842 4.17476 5.39706 4.10664 5.31608C3.94771 5.12687 3.70703 5.02545 3.4603 5.0474C3.21357 5.06859 2.99332 5.20861 2.86996 5.42355C0.531308 9.48024 2.09646 13.0435 3.5269 15.0839C3.27411 14.9492 3.06901 14.816 2.9464 14.7259C2.71935 14.5564 2.41585 14.5284 2.16004 14.654C1.90498 14.7797 1.74226 15.037 1.73696 15.3208C1.67414 19.1868 3.53447 21.4013 5.28429 22.6259C5.05119 22.6039 4.81429 22.6902 4.65233 22.8666C4.47069 23.0641 4.40635 23.3434 4.48507 23.5999C5.69375 27.556 8.66133 28.9001 10.5497 29.3565C6.66705 32.3793 0.952871 31.406 0.890053 31.3954C0.544932 31.3341 0.204351 31.5158 0.0635783 31.8359C-0.076438 32.1553 0.0189244 32.5299 0.297443 32.7419C4.39576 35.8699 9.29784 36.5624 12.8384 36.5624C15.5168 36.5624 17.4173 36.1658 17.5989 36.1257C35.5346 31.8753 36.0394 15.4464 35.9978 12.7543C39.365 9.62328 39.891 8.4305 39.972 8.13533C40.059 7.82275 39.9364 7.48974 39.6677 7.3081ZM34.7195 11.8757C34.5507 12.0308 34.4622 12.2541 34.4773 12.4834C34.525 13.21 35.4423 30.3427 17.2651 34.6499C17.1826 34.6673 9.95705 36.1749 3.69341 33.0718C6.34009 32.9984 10.1349 32.3052 12.7786 29.3368C12.9784 29.1135 13.0268 28.7926 12.9027 28.5202C12.7801 28.25 12.5099 28.0767 12.214 28.0767C12.2117 28.0767 12.2087 28.0767 12.2064 28.0767C12.1686 28.1009 8.19436 28.0721 6.37491 24.2917C7.10753 24.3333 8.01121 24.2879 8.73096 23.9564C9.02765 23.8194 9.20248 23.5084 9.16615 23.1837C9.12982 22.8597 8.88914 22.5956 8.56976 22.5282C8.36617 22.4851 3.94165 21.4959 3.32255 16.6695C3.99387 16.9632 4.85289 17.2031 5.70207 17.0737C5.99421 17.0298 6.23338 16.8201 6.31587 16.5363C6.39837 16.2525 6.3083 15.9467 6.08504 15.753C5.89582 15.588 1.74075 11.8953 3.71081 7.13251C5.84966 9.37655 12.1844 15.208 19.8596 14.7676C20.0844 14.7547 20.2925 14.6412 20.4265 14.4595C20.5597 14.2779 20.6051 14.0463 20.5506 13.8276C20.4053 13.2486 20.3311 12.6522 20.3311 12.0558C20.3311 8.13835 23.4675 4.95204 27.3221 4.95204C29.2074 4.95204 30.9761 5.70434 32.3014 7.0712C32.4406 7.215 32.6321 7.2975 32.8319 7.30128C33.6342 7.31264 34.9526 7.21803 36.4421 6.62088C36.0122 7.15597 35.381 7.79702 34.4523 8.52661C34.1897 8.73323 34.0936 9.08668 34.2154 9.39774C34.3373 9.70956 34.6521 9.90559 34.9806 9.87607C35.157 9.86169 36.0561 9.78298 37.0725 9.56274C36.517 10.1591 35.7579 10.9205 34.7195 11.8757Z"
-                                            fill="#A3ABD8" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0">
-                                            <rect width="40" height="40" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                        </div>
-        
-                    </div>
-                </div>
-            </footer>
+            <a href="https://twitter.com/lioneljami" class="twitter"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com/jubaer.jami.5/" class="facebook"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jubaer-tanjil-jami-ab84a0167/"
+              class="linkedin"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
         </div>
 
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <!-- <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li> -->
+            <li>
+              <a href="#about" class="nav-link scrollto"
+                ><i class="bx bx-user"></i> <span>About</span></a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="nav-link scrollto"
+                ><i class="bi bi-lightning-charge-fill"></i>
+                <span>Skills</span></a
+              >
+            </li>
+            <li>
+              <a href="#resume" class="nav-link scrollto"
+                ><i class="bi bi-file-earmark-person"></i>
+                <span>Resume</span></a
+              >
+            </li>
+            <!-- <li>
+              <a href="#portfolio" class="nav-link scrollto"
+                ><i class="bi bi-search"></i> <span>Research</span></a
+              >
+            </li> -->
+            <li>
+              <a href="#publications" class="nav-link scrollto"
+                ><i class="bi bi-mortarboard-fill"></i>
+                <span>Publications</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link scrollto"
+                ><i class="bx bx-envelope"></i> <span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <!-- <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Abdullah Al Amin</h1>
+      <p>I'm <span class="typed" data-typed-items="a Researcher, an Educator, an Inventor, an Inventor, an Engineer"></span></p>
     </div>
+  </section> -->
+    <!-- End Hero -->
 
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title"></div>
 
-   
-</body>
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+              <img src="assets/img/jubaerjami.jpeg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <h3>Undergraduate Student, BUET</h3>
+              <p class="fst-italic">
+                <b>Research Interest: </b> Molecular Dynamics, Machine Learning,
+                Nanocomposites, Additive Manufacturing, Computational Mechanics,
+                Multiscale and Multiphysics analysis.
+              </p>
+              <!-- <div class="row">
+                <div class="col-lg-12">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong
+                        >PhD, Mechanical and Aerospace Engineering, Case Western
+                        Reserve University</strong
+                      >
+                      <span>2018</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong
+                        >MS, Mechanical Engineering, The University of
+                        Akron</strong
+                      >
+                      <span>2014</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong
+                        >BS, Mechanical Engineering, Bangladesh University of
+                        Engineering & Technology</strong
+                      >
+                      <span>2009</span>
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
+              <div></div>
+              <p>
+                Hello! I’m Jubaer Tanjil Jami, a passionate Mechanical
+                Engineering student at the
+                <a href="http://www.buet.ac.bd"
+                  >Bangladesh University of Engineering and Technology (BUET)
+                </a>
+                with a strong interest in advanced research and software
+                engineering. My academic journey has been complemented by
+                extensive research experience, particularly in areas such as
+                molecular dynamics, nanocomposites, and additive manufacturing.
+                Currently, I am working on cutting-edge projects including
+                atomistic simulations of carbon nanotube composites and
+                data-driven discovery of dimensionless numbers and governing
+                laws from scarce measurements to predict fatigue life. This work
+                involves developing and training models based on the Buckingham
+                Pi theorem to derive physically meaningful relationships from
+                data, with high accuracy predictions for fatigue life in alloys.
+              </p>
+              <p>
+                In addition to my research background, I have a solid foundation
+                in software development and currently serve as a Senior Frontend
+                Engineer at <a href="https://codervai.com/">Codervai.com</a>,
+                where I help build a world-class e-learning platform. With
+                expertise in frameworks like Next.js, React, and tools like
+                Docker and AWS, I thrive in creating dynamic, user-centric web
+                applications. I am also proficient in developing real-time
+                systems and predictive models through deep learning, applying my
+                skills to robotics and control systems.
+              </p>
+              <p>
+                Beyond academics and professional work, I’ve been involved in
+                exciting hardware projects, such as building “LEO – The Dog,” a
+                quadruped robot with cognitive abilities, and designing
+                efficient heat exchangers. My work has been recognized through
+                various accolades, including a
+                <a
+                  href="https://2021.spaceappschallenge.org/challenges/statements/you-are-my-sunshine/teams/solarspec/project"
+                  >NASA Space Apps Challenge win</a
+                >.
+              </p>
+              <p>
+                I am always eager to collaborate on innovative projects and
+                research that push the boundaries of technology and engineering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
 
+      <!-- ======= Facts Section ======= -->
+      <!-- <section id="facts" class="facts">
+        <div class="container">
+          <div class="section-title">
+            <h2>Facts</h2>
+            <p>Some interesting facts!.</p>
+          </div>
+
+          <div class="row no-gutters">
+            <div
+              class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
+              data-aos="fade-up"
+            >
+              <div class="count-box">
+                <i class="bi bi-journals"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="13"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Article Published </strong> in peer reviewed Journals
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="count-box">
+                <i class="bi bi-journal-richtext"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="7"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Conference Proceedings</strong> scientific Meetings
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="count-box">
+                <i class="bi bi-quote"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="257"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p><strong>Citations</strong> based on google scholar</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="count-box">
+                <i class="bi bi-graph-up-arrow"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="8"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p><strong>h-index</strong> based on google scholar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- End Facts Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <!-- <section id="skills" class="skills section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Skills</h2>
+            <p>
+              My skills are derived from the years of experience through
+              industry and academic research.
+            </p>
+          </div>
+
+          <div class="row skills-content">
+            <div class="col-lg-6" data-aos="fade-up">
+              <div class="progress">
+                <span class="skill"
+                  >Multiscale multiphysics modeling <i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"
+                  >Computational Fluid Dynamics <i class="val">50%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"
+                  >Computational Mechanics <i class="val">75%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="progress">
+                <span class="skill">C++ <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"
+                  >Data acquisition <i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Experiment <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="skills" class="skills section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Skills</h2>
+            <p>
+              My skills are derived from years of experience through industry
+              and academic research.
+            </p>
+          </div>
+
+          <div class="row skills-content">
+            <div class="col-lg-6" data-aos="fade-up">
+              <ul>
+                <li>
+                  <strong>Programming Languages:</strong> MATLAB, Python,
+                  JavaScript, C/C++, LaTeX
+                </li>
+                <li>
+                  <strong>Robotics and Control Systems:</strong> ROS (Robot
+                  Operating System), Arduino
+                </li>
+                <li>
+                  <strong>Machine Learning and Computer Vision:</strong>
+                  TensorFlow, PyTorch, Keras, OpenCV
+                </li>
+                <li>
+                  <strong>Frameworks:</strong> Express.js, React.js, Next.js,
+                  Sass, Tailwind, React Native
+                </li>
+                <li><strong>Technologies:</strong> Git, Docker, Nginx, Unix</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <ul>
+                <li>
+                  <strong>Database:</strong> MongoDB, PostgreSQL, Firebase
+                </li>
+                <li>
+                  <strong>Cloud Platform:</strong> AWS (EC2, ECS, Amplify)
+                </li>
+                <li>
+                  <strong>Computer Aided Design:</strong> SolidWorks, AutoCAD
+                </li>
+                <li>
+                  <strong>Simulation Software & Tools:</strong>
+                  <ul>
+                    <li><strong>Molecular Dynamics:</strong> LAMMPS, Ovito</li>
+                    <li>
+                      <strong>Computational Fluid Dynamics:</strong> Ansys
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Other Platforms:</strong> Netlify, Heroku, Render
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Skills Section -->
+
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container">
+          <div class="section-title">
+            <h2>Resume</h2>
+            <p>
+              A detailed CV is available
+              <a href="assets/files/Jubaer_Jami_CV___Updated_Academics.pdf"
+                >here</a
+              >. A brief summary is provided below.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+              <h3 class="resume-title">Summary</h3>
+              <div class="resume-item pb-0">
+                <h4>Jubaer Jami</h4>
+                <p></p>
+                <p>
+                  Aiming to develop innovative models by combining multi-physics
+                  simulations, data-driven discovery, and deep learning to solve
+                  complex engineering problems such as material behavior,
+                  fatigue life prediction, and process optimization in additive
+                  manufacturing.
+                </p>
+                <h4 class="resume-title">Research Interests</h4>
+                <ul>
+                  <li>Molecular Dynamics</li>
+                  <li>Machine Learning</li>
+                  <li>Nanocomposites</li>
+                  <li>Additive Manufacturing</li>
+                  <li>Computational Mechanics</li>
+                  <li>Multiscale and Multiphysics analysis</li>
+                </ul>
+              </div>
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Senior Frontend Engineer</h4>
+                <h5>June 2023 - Present</h5>
+                <div>
+                  <a href="https://codervai.com/"><em>Codervai.com</em></a>
+                </div>
+                <ul>
+                  <li>
+                    Built a world-class e-learning platform frontend using
+                    Next.js, Tailwind CSS, and TypeScript, developing
+                    comprehensive dashboards with integrated features like
+                    quizzes, videos, Zoom, and a Leetcode-like problem-solving
+                    IDE.
+                  </li>
+
+                  <li>
+                    Maintained website performance through responsive bug fixes
+                    and management of multiple subdomains for diverse customer
+                    bases.
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Junior Software Engineer</h4>
+                <h5>Dec 2023 - June 2024</h5>
+                <div>
+                  <a href="https://inovacetech.com/"
+                    ><em>Inovace Technologies</em></a
+                  >
+                </div>
+
+                <ul>
+                  <li>
+                    Customized Flutter and Native applications to meet clients'
+                    needs for seamless app experiences.
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Frontend Engineer</h4>
+                <h5>Feb 2023 - Dec 2023</h5>
+                <div>
+                  <a href="https://home.warranty-worx.com/"
+                    ><em>Warranty-Worx.com</em></a
+                  >
+                </div>
+                <ul>
+                  <li>
+                    Managed the full project lifecycle, developing a bridge
+                    between clients and engineers while demonstrating
+                    proficiency in cross-platform app development using React
+                    Native for iOS and Android platforms.
+                  </li>
+                  <li>
+                    Developed user interfaces using React, SASS, and ContextAPI,
+                    crafting visually appealing and responsive front-end designs
+                    while collaborating with designers to ensure optimal user
+                    experience.
+                  </li>
+                  <li>
+                    Tested, debugged, and optimized user interface code for
+                    performance, functionality, SEO, and accessibility.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- <h3 class="resume-title">Education</h3>
+
+              <div class="resume-item">
+                <h4>Bachelor of Science</h4>
+                <h5>2020 - 2025</h5>
+                <p>
+                  <em
+                    >Bangladesh University of Engineering and Technology, Dhaka,
+                    Bangladesh</em
+                  >
+                </p>
+                <p>
+                  Atomistic Simulation of Tensile Deformation in Carbon
+                  Nanotube-Reinforced Composites, and Design and Development of
+                  a Biomechanically-Inspired Quadruped Robot with Advanced
+                  Motion Control Systems.
+                </p>
+              </div> -->
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Research Experience</h3>
+              <div class="resume-item">
+                <h4>Undergraduate Thesis</h4>
+                <h5>November 2023 - Present</h5>
+                <p><em>Department of Mechanical Engineering, BUET</em></p>
+                <p><strong>Supervisor:</strong> Dr. Mohammad Jane Alam Khan</p>
+                <p>
+                  <strong>Title:</strong> An Atomistic Study of the Tensile
+                  Deformation of defective Carbon Nanotube reinforced
+                  Poly-oxymethylene Composites
+                </p>
+                <ul>
+                  <li>
+                    Investigating the mechanical behavior of CNT-reinforced PVC
+                    nanocomposites using molecular dynamics simulations,
+                    focusing on the impact of CNT morphology on composite
+                    strength and stiffness.
+                  </li>
+                  <li>
+                    Employed BIOVIA Material Studio to construct a nanocomposite
+                    unit cell and LAMMPS for simulations under tensile loading
+                    conditions. Trying to analyze atomistic interactions between
+                    CNTs and the PVC matrix.
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Remote Research Intern</h4>
+                <h5>July 2024 - Present</h5>
+                <p><em>IMMPACT Lab, Virginia Tech, VA</em></p>
+                <p><strong>Advisor:</strong> Dr. Sourav Saha</p>
+                <p>
+                  <strong>Title:</strong> Data-Driven Discovery of Dimensionless
+                  Numbers and Governing Laws from Scarce Measurements for
+                  Predicting Fatigue Life
+                </p>
+                <ul>
+                  <li>
+                    Developed and trained a model for dimensionless number
+                    discovery using the Buckingham Pi theorem to derive
+                    physically meaningful relationships from data.
+                  </li>
+                  <li>
+                    Applied gradient-based two-level optimization techniques to
+                    predict fatigue life in alloys with high accuracy.
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Remote Research Intern</h4>
+                <h5>November 2023 - Present</h5>
+                <p><em>SMALT Laboratory, University of Dayton, Ohio</em></p>
+                <p><strong>Advisor:</strong> Dr. Abdullah Al Amin</p>
+                <p>
+                  <strong>Title:</strong> Predicting the influence of process
+                  parameters in keyhole porosity during laser powder bed fusion
+                  of metals using convolutional neural network using ANSYS
+                  Fluent & Deep learning.
+                </p>
+                <ul>
+                  <li>
+                    Developed a YOLO v8-based keyhole detection system for laser
+                    powder bed fusion additive manufacturing, with a confidence
+                    score of 40-60%.
+                  </li>
+                  <li>
+                    Currently leading efforts to construct a computational fluid
+                    dynamics model for predicting pore formation in laser powder
+                    bed fusion additive manufacturing, enabling real-time
+                    prediction 5 microseconds ahead of actual pore formation.
+                  </li>
+                </ul>
+              </div>
+              <!-- ... (previous research experience items) ... -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Resume Section -->
+
+      <!-- New Standardized Test Score Section -->
+      <section id="test-scores" class="test-scores">
+        <div class="container">
+          <div class="section-title">
+            <h2>Standardized Test Score</h2>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-6" data-aos="fade-up">
+              <div class="test-score-item">
+                <img
+                  src="assets/img/toefl-logo.jpg"
+                  alt="TOEFL Logo"
+                  class="img-fluid"
+                  style="max-width: 200px; margin-bottom: 15px"
+                />
+                <h4>TOEFL: 101/120</h4>
+                <p>Reading: 23, Listening: 28, Speaking: 23, Writing: 27</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======= Research Grant Section ======= -->
+      <section id="research-grant" class="research-grant">
+        <div class="container">
+          <div class="section-title">
+            <h2>Research Grant</h2>
+          </div>
+
+          <div class="research-grant-item">
+            <h4>
+              April 2024 | RISE Undergraduate Research Grant | Research and
+              Innovation Center for Science and Engineering (RISE), BUET |
+              <span class="certificate">Certificate</span>
+            </h4>
+            <p><strong>Dr. Mohammad Jane Alam Khan Research Group</strong></p>
+            <p>
+              <strong>Project:</strong> An Atomistic Study of the Tensile
+              Deformation of defective Carbon Nanotube reinforced
+              Poly-oxymethylene Composites
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Research Grant Section -->
+
+      <section id="publications" class="publications">
+        <div class="container">
+          <div class="section-title">
+            <h2>Research Publications</h2>
+            <p>
+              A selection of my research publications and conference
+              presentations.
+            </p>
+          </div>
+
+          <h3>Journal Manuscripts Under Preparation</h3>
+          <div class="publication-item">
+            <div class="row">
+              <div class="col-lg-4">
+                <img
+                  src="assets/img/Surface-Parameters-1-1024x1024.png"
+                  class="img-fluid"
+                  alt="Molecular Dynamics Study"
+                />
+              </div>
+              <div class="col-lg-8">
+                <h4>
+                  Molecular dynamics study of evaporation of low-GWP
+                  refrigerants over sinusoidal nanostructured surface
+                </h4>
+                <p>
+                  <strong
+                    >T. Mehereen, A.A. Nitu, J.T. Jami, M. A. Rahman</strong
+                  >
+                </p>
+                <p><em>Ongoing</em></p>
+                <div class="publication-links">
+                  <a href="#" class="btn btn-primary disabled">PDF (N/A)</a>
+                  <a href="#" class="btn btn-secondary disabled"
+                    >Presentation (N/A)</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3>Conferences</h3>
+          <div class="publication-item">
+            <div class="row">
+              <div class="col-lg-4">
+                <img
+                  src="assets/img/Surface-Parameters-3-1024x1024.png"
+                  class="img-fluid"
+                  alt="Quadruped Robot"
+                />
+              </div>
+              <div class="col-lg-8">
+                <h4>
+                  Design and Development of Leo: An Affordable Biomechanically
+                  Inspired Quadruped Robot with Cognitive Abilities.
+                </h4>
+                <p>
+                  <strong>J.T. Jami, T. Mehereen, M.T. Rahman, M. Alam</strong>
+                </p>
+                <p><em>Presented and Accepted</em></p>
+                <ul>
+                  <li>
+                    Presented at the IEEE International Conference on Power,
+                    Electrical, Electronics and Industrial Applications 2024-
+                    Conference proceedings to be published in IEEE Xplore
+                    Digital Library
+                  </li>
+                  <li>
+                    Accepted for presentation at the International Mechanical
+                    Engineering Congress Exposition (IMECE) 2024 Undergrad Expo
+                    organized by the American Society of Mechanical Engineers
+                    (ASME)
+                  </li>
+                </ul>
+                <div class="publication-links">
+                  <a
+                    href="assets/files/quadruped-robot.pdf"
+                    class="btn btn-primary"
+                    download
+                    >PDF</a
+                  >
+                  <a href="#" class="btn btn-secondary disabled"
+                    >Presentation (N/A)</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-item">
+            <div class="row">
+              <div class="col-lg-4">
+                <img
+                  src="assets/img/Surface-Parameters-2-1024x1024.png"
+                  class="img-fluid"
+                  alt="Liquid Condensation Study"
+                />
+              </div>
+              <div class="col-lg-8">
+                <h4>
+                  Molecular Dynamics Study of Liquid Condensation on
+                  Nano-structured Sinusoidal Hybrid Wetting Surfaces.
+                </h4>
+                <p>
+                  <strong
+                    >T. Mehereen, S. Chanda, A. A. Nitu, J.T. Jami, R. R. Rahim,
+                    M.A. Rahman</strong
+                  >
+                </p>
+                <p><em>Abstract Accepted</em></p>
+                <ul>
+                  <li>
+                    Abstract accepted at the 8th BSME International Conference
+                    on Thermal Engineering (ICTE) 2024- Conference proceedings
+                    to be published by AIP (American Institute of Physics)
+                  </li>
+                </ul>
+                <div class="publication-links">
+                  <a
+                    href="assets/files/liquid-condensation-abstract.pdf"
+                    class="btn btn-primary"
+                    download
+                    >Abstract</a
+                  >
+                  <a href="#" class="btn btn-secondary disabled"
+                    >Presentation (N/A)</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-item">
+            <div class="row">
+              <div class="col-lg-4">
+                <img
+                  src="assets/img/Sustainable-sneakers-3-1024x1024.png"
+                  class="img-fluid"
+                  alt="Regenerative Shock Absorber"
+                />
+              </div>
+              <div class="col-lg-8">
+                <h4>
+                  Design and Analysis of a Regenerative Shock Absorber with
+                  Added Mechanical Advantage for Increased Efficiency
+                </h4>
+                <p>
+                  <strong
+                    >S. U. Rauf, T. Mehereen, A. Zaman, J.T. Jami , M.N.
+                    Shahriare</strong
+                  >
+                </p>
+                <p><em>Abstract Accepted</em></p>
+                <ul>
+                  <li>
+                    Abstract accepted at the 8th BSME International Conference
+                    on Thermal Engineering (ICTE) 2024- Conference proceedings
+                    to be published by AIP (American Institute of Physics)
+                  </li>
+                </ul>
+                <div class="publication-links">
+                  <a
+                    href="assets/files/shock-absorber-abstract.pdf"
+                    class="btn btn-primary"
+                    download
+                    >Abstract</a
+                  >
+                  <a href="#" class="btn btn-secondary disabled"
+                    >Presentation (N/A)</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-item">
+            <div class="row">
+              <div class="col-lg-4">
+                <img
+                  src="assets/img/keyhole-porosity.png"
+                  class="img-fluid"
+                  alt="Keyhole Porosity"
+                />
+              </div>
+              <div class="col-lg-8">
+                <h4>
+                  Predicting the influence of process parameters in keyhole
+                  porosity during laser powder bed fusion of metals using
+                  convolutional neural network using ANSYS Fluent & Deep
+                  learning.
+                </h4>
+                <p>
+                  <strong
+                    >S. Chanda, J. Jami, T. Mehereen and A. A. Amin</strong
+                  >
+                </p>
+                <p><em>Ongoing</em></p>
+                <div class="publication-links">
+                  <a
+                    href="assets/files/keyhole-porosity.pdf"
+                    class="btn btn-primary"
+                    download
+                    >PDF</a
+                  >
+                  <a href="#" class="btn btn-secondary disabled"
+                    >Presentation (N/A)</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Research Publications Section -->
+
+      <!--
+    <!- - ======= Testimonials Section ======= - ->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!- - End testimonial item - ->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!- - End testimonial item - ->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!- - End testimonial item - ->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!- - End testimonial item - ->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!- - End testimonial item - ->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!- - End Testimonials Section - ->
+  -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>Please reach out to me for exciting collaboration!.</p>
+          </div>
+
+          <div class="row justify-content-center" data-aos="fade-in">
+            <div class="col-lg-5 d-flex justify-content-center">
+              <div class="info">
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>
+                    <a href="mailto:jamijubaer@gmail.com"
+                      >jamijubaer@gmail.com</a
+                    >
+                  </p>
+                </div>
+                <div class="contact-button">
+                  <a href="mailto:jamijubaer@gmail.com" class="btn-contact-me"
+                    >Contact Me</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container"></div>
+    </footer>
+    <!-- End  Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Altmetric JS File -->
+    <script
+      type="text/javascript"
+      src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"
+    ></script>
+  </body>
 </html>
