@@ -1,0 +1,16 @@
+# Jubaer Tanjil Jami
+
+> Jubaer Tanjil Jami, also known as Jubaer Jami, is a PhD student in Mechanical Engineering at the University of California, Merced, in the Martini Research Group.
+
+His research uses molecular dynamics and multiscale computational methods to study how mechanical forces, including compression and shear, influence chemical reactions. Related topics are tribology, finite-element to molecular-dynamics coupling, machine-learned interatomic potentials, and high-performance computing.
+
+## Pages
+
+- [Home](https://www.jubaerjami.com/): research, publications, presentations, experience, education, and skills
+- [Projects](https://www.jubaerjami.com/projects.html): an STL viewer with LLM support for materials images, plus the personal projects Toothless and Wondoodle
+- [CV](https://drive.google.com/file/d/1q0flTYbLXyZ0wdYOnBHHN25eB9KBFUXy/view?usp=sharing)
+- [Google Scholar](https://scholar.google.com/citations?user=OFgqmzwAAAAJ&hl=en)
+- [Blog](https://blogs.jubaerjami.com)
+- [Martini Research Group](https://faculty.ucmerced.edu/amartini/)
+- [GitHub](https://github.com/logolica99)
+- [LinkedIn](https://www.linkedin.com/in/jubaerjami)

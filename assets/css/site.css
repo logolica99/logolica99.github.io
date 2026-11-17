@@ -29,14 +29,14 @@ body {
   padding: 3.25rem 1.25rem 4.5rem;
 }
 
-header.top {
+.top {
   display: flex;
   gap: 1.15rem;
   align-items: center;
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.25rem;
 }
 
-header.top img {
+.top img {
   width: 88px;
   height: 88px;
   object-fit: cover;
@@ -63,6 +63,28 @@ h1 a {
   color: var(--muted);
 }
 
+.role a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.role a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  margin: 1.35rem 0 0;
+}
+
+.interests {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+}
+
+section {
+  scroll-margin-top: 1.25rem;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -81,10 +103,16 @@ a {
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.85rem 1.15rem;
-  margin: 0 0 0.5rem;
-  padding-top: 0.25rem;
+  align-items: baseline;
+  margin: 1.35rem 0 0.25rem;
+  padding-top: 0.15rem;
   font-size: 0.92rem;
+}
+
+nav a:not(:last-child)::after {
+  content: "·";
+  margin: 0 0.6rem;
+  color: #b7b2a8;
 }
 
 nav a {
@@ -130,8 +158,20 @@ h3 a {
   text-decoration: none;
 }
 
-h3 a:hover {
+h3 a:hover,
+h4 a:hover {
   color: var(--link);
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+h4 a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .when,
@@ -169,7 +209,22 @@ li {
 }
 
 .pubs li {
-  margin: 0 0 0.85rem;
+  margin: 0 0 1.05rem;
+}
+
+.kind {
+  display: block;
+  margin-bottom: 0.12rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.more {
+  margin: 2.4rem 0 0;
+  color: var(--muted);
 }
 
 .skills {
@@ -197,11 +252,11 @@ footer {
     padding-top: 1.75rem;
   }
 
-  header.top {
+  .top {
     align-items: flex-start;
   }
 
-  header.top img {
+  .top img {
     width: 72px;
     height: 72px;
   }
